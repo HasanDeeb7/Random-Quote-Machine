@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+#root {
+  $boxBackground: #fff;
+  $randomColor: #7878e0;
+  $opacity-transition: opacity 1s ease-in
+}
+$transition: background-color 1s;
+* {
+  background-color: var(--randomColor);
+  transition: background-color 1s ease-out;
+}
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #fff;
+  margin: 15rem auto;
+  width: 50%;
+  padding: 3rem;
+  border-radius: 30px;
+
+  position: relative;
+}
+
+.text-container {
+  background-color: #fff;
+  transition: all 1s ease-in;
+  opacity: 1;
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    background-color: inherit;
+    color: var(--randomColor);
+    transition: color 1s ease-in;
+     
+  }
+}
+ 
+ @keyframes fadeinout {
+  0%{opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+ }
+ 
+  .icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  background-color: inherit;
+  transition: all 1s ease-in-out;
+}
+.mini-icon {
+  display: inline;
+  font-size: 2rem;
+  background-color: inherit;
+  transition: all 1s ease-in-out;
+  margin-right: 5px;
+}
+
+.bottom-container {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  a {
+    background-color: inherit;
+  }
+}
+.share-container {
+  background-color: inherit;
+  display: flex;
+  gap: 1rem;
+
+ 
+}
+
+.quote-btn {
+  color: white;
+  border: 5px solid transparent;
+  background-color: var(--randomColor);
+  transition: background-color 1s ease-out;
+  &:hover {
+    opacity: 70%;
+  }
+}
+
+.link-icons {
+  font-size: 1.7rem;
+  color: white;
+  padding: 4px;
+}
